@@ -51,7 +51,11 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [],
+            'rules' => [[
+                'class' => 'yii\rest\UrlRule',
+                'controller' => 'apiv1/carrera',
+                'pluralize'=>false,
+            ]],
         ],
         
     ],
