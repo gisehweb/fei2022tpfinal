@@ -25,6 +25,7 @@ services:
         DATABASE_USER: ${DATABASE_USER}
         DATABASE_HOST: postgres
         PRODUCCION: 0
+        ENABLE_GII: 1
         PHP_USER_ID: ${USER_UNIX_ID}
       ports:
       - '8000:80'
