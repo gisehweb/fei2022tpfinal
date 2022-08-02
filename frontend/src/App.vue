@@ -2,7 +2,10 @@
   <v-app>
     <MainMenu></MainMenu>
     <MainBar></MainBar>
-    <v-main> </v-main>
+    <v-main>  
+      <v-container fluid>
+        <router-view/>
+      </v-container></v-main>
      </v-app>
 </template>
 
