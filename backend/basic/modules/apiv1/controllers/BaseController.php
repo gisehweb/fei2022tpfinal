@@ -10,12 +10,13 @@ use yii\rest\ActiveController;
 
 /**
  * Default controller for the `apiv1` module
+ * *@return array Lista de dominios que pueden acceder a la api
  */
 class BaseController extends ActiveController
 {
     public static function allowedDomains()
     {
-        return [$_SERVER["REMOTE_ADDR"], 'http://127.0.0.1:8080'];
+        return [$_SERVER["REMOTE_ADDR"], 'http://localhost:8080'];
     }
 
 

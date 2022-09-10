@@ -1,27 +1,28 @@
 <template>
   <v-app>
-    <MainMenu></MainMenu>
-    <MainBar></MainBar>
+    <BarMenu></BarMenu>
+    
     <v-main>  
       <v-container fluid>
         <router-view/>
-      </v-container></v-main>
-     </v-app>
-</template>
-
-<script>
-import MainMenu from "./components/MainMenu.vue";
-import MainBar from "./components/MainBar.vue";
+      </v-container></v-main><MyFooter />
+     </v-app> 
+  </template>
+  
+ <script>
+import BarMenu from "./components/BarMenu.vue";
+import MyFooter from "./components/MyFooter.vue"
 
 export default {
   name: "App",
-
+  
   components: {
-    MainMenu,
-    MainBar,
+    BarMenu,
+    MyFooter
   },
 
   data: () => ({
+
     //
   }),
 };
