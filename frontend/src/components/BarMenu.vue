@@ -57,7 +57,14 @@
      drawer: false,
       items: [
         { title: "Home", icon: "mdi-home", to: "/" },
-        { title: 'Acerca de', icon: 'mdi-text', to: '/about' }
+        { title: 'Acerca de', icon: 'mdi-message-fast', to: '/about' },
+        { title: 'Carrera', icon: 'mdi-clipboard-text-multiple', to: '/carrera' },
+        { title: 'Profesor', icon: 'mdi-account', to: '/Profesor' },
+        { title: 'Materia', icon: 'mdi-folder-edit', to: '/Materia' },
+        { title: 'Aula', icon: 'mdi-home-group', to: '/Aula' },
+        { title: 'ReservaAula', icon: 'mdi-text', to: '/ReservaAula' },
+        { title: 'HorarioMateria', icon: 'mdi-folder-clock-outline', to: '/HorarioMateria' },
+        
         ],
     }),
     mounted(){

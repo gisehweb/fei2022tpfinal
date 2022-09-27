@@ -1,9 +1,18 @@
 <template>
-    <div>
-        <h1>Acerca de</h1>
+    <div> 
+        <v-img
+          alt="acercade"
+          class="shrink mr-2"
+          contain
+          :src="require('../assets/acerca.png')"
+          transition="scale-transition"
+          width="100%"
+        />
         <router-link to="/">Go to Home</router-link>
         {{ id }}
-    </div>
+
+      </div>  
+  
 </template>
 
 
