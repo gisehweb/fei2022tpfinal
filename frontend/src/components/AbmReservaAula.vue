@@ -262,7 +262,7 @@ export default {
         },
         editarReserva(id, reserva) {
             var that = this
-            axios.put("apiv1/reservaaula/" + id, reserva)
+           axios.put("apiv1/reservaaula/" + id, reserva)
                 .then(function () {
                     that.listaDeReservas()
                     alert('Reserva editada')
