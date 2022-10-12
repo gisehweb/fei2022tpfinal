@@ -46,6 +46,24 @@
                           item-value="id"
                           single-line
                         ></v-select>
+                        <v-select
+                          v-model="editedItem.id_reserva"
+                          label="Hora Desde"
+                          :items="reservas"
+                          :hint="`${editedItem.id_reserva.fh_desde}`"
+                          item-text="fh_desde"
+                          item-value="id"
+                          single-line
+                        ></v-select>
+                        <v-select
+                          v-model="editedItem.id_reserva"
+                          label="Hora Hasta"
+                          :items="reservas"
+                          :hint="`${editedItem.id_reserva.fh_hasta}`"
+                          item-text="fh_hasta"
+                          item-value="id"
+                          single-line
+                        ></v-select>
                       </v-col>
                     </v-row>
                   </v-container>
@@ -121,9 +139,11 @@
         profesores: "",
         reservas: "",
         headers: [
-          { text: "Horario", value: "id" },
+          { text: "id", value: "id" },
           { text: "Materia", value: "id_materia.nombre" },
           { text: "Reserva", value: "id_reserva.observacion" },
+          { text: "fh Desde", value: "id_reserva.fh_desde" },
+          { text: "fh Hasta", value: "id_reserva.fh_hasta" },
           { text: "Actions", value: "actions", sortable: false },
         ],
         horarios: [],
